@@ -86,7 +86,7 @@ cd ~
 git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenLane.git
 cd OpenLane
 ```
-![OpenLane_Installed]()
+![OpenLane_Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/openlane.jpg?raw=true)
 ### i) Python Virtual Environment
 
 Created Python virtual environment:
