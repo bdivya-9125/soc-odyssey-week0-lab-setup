@@ -28,7 +28,7 @@ Codename:       jammy
 ---
 
 __Yosys__
-
+```bash
 $ sudo apt update
 $ sudo apt install build-essential clang bison flex git -y
 $ git clone https://github.com/YosysHQ/yosys
