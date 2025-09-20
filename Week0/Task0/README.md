@@ -39,6 +39,7 @@ $ cd yosys
 $ make
 $ sudo make install
 ```
+![Yosys Installed]()
 
 ## 3.Icarus Verilog
 ```bash
