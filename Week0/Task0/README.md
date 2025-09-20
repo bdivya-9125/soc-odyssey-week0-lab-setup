@@ -26,7 +26,7 @@ Release:        22.04
 Codename:       jammy
 ---
 ```
-![ubuntu Installed](ubuntu_install.jpg)
+![ubuntu Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ubuntu_install.jpg?raw=true)
 
 # TOOL CHECK
 ## 2. Yosys
