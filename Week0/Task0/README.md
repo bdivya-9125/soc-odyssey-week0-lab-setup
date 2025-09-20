@@ -26,8 +26,8 @@ Release:        22.04
 Codename:       jammy
 
 ---
-``` ## 2. Yosys
-```bash
+```
+## 2. Yosys
 $ sudo apt update
 $ sudo apt install build-essential clang bison flex git -y
 $ git clone https://github.com/YosysHQ/yosys
