@@ -86,12 +86,14 @@ cd ~
 git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenLane.git
 cd OpenLane
 ```
-### Python Virtual Environment
+![OpenLane_Installed]()
+### i) Python Virtual Environment
 
 Created Python virtual environment:
 ```bash
 python3 -m venv ./venv
 ls venv
+![OpenLane_Installed]()
 
 
 
