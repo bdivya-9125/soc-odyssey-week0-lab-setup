@@ -93,4 +93,5 @@ Created Python virtual environment:
 ```bash
 python3 -m venv ./venv
 ls venv
-![OpenLane_Installed]()
+```
+![OpenLane_Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/python_setup.jpg?raw=true)
