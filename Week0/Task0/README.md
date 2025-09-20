@@ -78,6 +78,20 @@ docker ps
 ```
 ![Docker_Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/docker.jpg?raw=true)
 
+## 8. OpenLane:
+Cloned OpenLane repository:
+
+```bash
+cd ~
+git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenLane.git
+cd OpenLane
+```
+### Python Virtual Environment
+
+Created Python virtual environment:
+```bash
+python3 -m venv ./venv
+ls venv
 
 
 
