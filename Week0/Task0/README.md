@@ -53,21 +53,31 @@ $ iverilog -v
 $ sudo apt install gtkwave -y
 $ gtkwave --version
 ```
-![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/gtkwave.jpg?raw=true)
+![GTKWave Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/gtkwave.jpg?raw=true)
 
 ## 5. Magic
 ```bash
 $ sudo apt install magic -y
 $ magic -noconsole -dnull
 ```
-![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/magic%20vlsi.jpg?raw=true)
+![Magic Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/magic%20vlsi.jpg?raw=true)
 
 ## 6. Ngspice
 ```bash
 $ sudo apt install ngspice -y
 $ ngspice -v
 ```
-![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ngspice.jpg?raw=true)
+![Ngspice Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ngspice.jpg?raw=true)
+
+## 7.Docker
+
+Docker is required for running OpenLane. It allows the flow to run in an isolated container with all dependencies pre-installed.
+```bash
+docker --version
+docker ps
+![iverilog Installed]()
+
+
 
 
 
