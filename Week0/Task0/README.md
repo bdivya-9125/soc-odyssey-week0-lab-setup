@@ -53,7 +53,7 @@ $ iverilog -v
 $ sudo apt install gtkwave -y
 $ gtkwave --version
 ```
-![iverilog Installed]()
+![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/gtkwave.jpg?raw=true)
 
 ## 5. Magic
 ```bash
