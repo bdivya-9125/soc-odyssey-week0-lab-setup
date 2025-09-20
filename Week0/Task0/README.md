@@ -27,30 +27,41 @@ Codename:       jammy
 
 ---
 ```
+# TOOL CHECK
 ## 2. Yosys
+
+```bash
 $ sudo apt update
 $ sudo apt install build-essential clang bison flex git -y
 $ git clone https://github.com/YosysHQ/yosys
 $ cd yosys
 $ make
 $ sudo make install
+```
 
-
-# Icarus Verilog
+## 3.Icarus Verilog
+```bash
 $ sudo apt install iverilog -y
 $ iverilog -v
+```
 
-# GTKWave
+## 4.GTKWave
+```bash
 $ sudo apt install gtkwave -y
 $ gtkwave --version
+```
 
-# Magic VLSI
+## 5. Magic
+```bash
 $ sudo apt install magic -y
 $ magic -noconsole -dnull
+```
 
-# Ngspice
+## 6. Ngspice
+```bash
 $ sudo apt install ngspice -y
 $ ngspice -v
+```
 
 
 
