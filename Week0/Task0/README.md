@@ -75,6 +75,7 @@ Docker is required for running OpenLane. It allows the flow to run in an isolate
 ```bash
 docker --version
 docker ps
+```
 ![Docker_Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/docker.jpg?raw=true)
 
 
