@@ -25,3 +25,48 @@ Description:    Ubuntu 22.04 LTS
 Release:        22.04
 Codename:       jammy
 
+2. Yosys
+
+Installed Yosys synthesis tool.
+
+$ sudo apt update
+$ sudo apt install build-essential clang bison flex git -y
+$ git clone https://github.com/YosysHQ/yosys.git
+$ cd yosys
+$ make config-gcc
+$ git submodule update --init --recursive
+$ make
+$ sudo make install
+$ yosys -V
+
+
+3. Icarus Verilog
+$ sudo apt install iverilog -y
+$ iverilog -v
+
+
+4. GTKWave
+$ sudo apt install gtkwave -y
+$ gtkwave --version
+
+
+5. Magic VLSI
+$ sudo apt install magic -y
+$ magic -noconsole -dnull
+
+
+6. Ngspice
+$ sudo apt install ngspice -y
+$ ngspice -v
+
+
+
+---
+
+This now **accurately reflects your Ubuntu 22.04 setup**.  
+
+If you want, I can **prepare the final fully formatted README.md** with all sections and placeholders for your actual snapshots ready to **copy-paste directly into GitHub**, just like the reference repo.  
+
+Do you want me to do that?
+
+
