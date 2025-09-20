@@ -1,53 +1,84 @@
-RISC-V SoC Tapeout Odyssey
+# RISC‑V Reference SoC Tapeout Program VSD  
+## Week 0 - Tools Installation
 
-This repository captures my journey through the VSD RISC-V Reference SoC Tapeout Program (Phase-2). It provides a structured walkthrough of the open-source ASIC design flow — from RTL to GDSII — using the SKY130 process design kit (PDK) alongside a suite of open-source EDA tools.
+This document shows the installation and verification of all required tools for Week 0.
 
-📌 Program Overview
+---
 
-The VSD Tapeout Program is an industry-focused initiative aimed at giving participants end-to-end exposure to the ASIC design lifecycle. The program emphasizes:
+## System Requirements
 
-Designing and integrating RISC-V based SoC architectures
+- 6 GB RAM  
+- 50 GB HDD  
+- Ubuntu 22.04 LTS or higher  
+- 4 vCPU  
 
-Implementing RTL-to-GDSII flows with OpenLane
+---
 
-Achieving timing closure, performing power analysis, and handling floorplanning, placement, and routing
+## 1. Ubuntu / WSL
 
-Preparing tapeout-ready designs using the open-source SKY130 PDK
+Installed Ubuntu 22.04 LTS via WSL2.
 
-For further context, see the official announcement: 🔗 Silicon Sovereignty – Why It Matters (Phase-2 Launch)
+```bash
+$ lsb_release -a
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04 LTS
+Release:        22.04
+Codename:       jammy
+---
+```
+![ubuntu Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ubuntu_install.jpg?raw=true)
 
-📂 Repository Structure
+# TOOL CHECK
+## 2. Yosys
 
-docs/ → Technical documentation, design notes, and reports
+```bash
+$ sudo apt update
+$ sudo apt install build-essential clang bison flex git -y
+$ git clone https://github.com/YosysHQ/yosys
+$ cd yosys
+$ make
+$ sudo make install
+```
+![Yosys Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/yosys.jpg?raw=true)
 
-src/ → RTL source files and verification testbenches
+## 3.Icarus Verilog
+```bash
+$ sudo apt install iverilog -y
+$ iverilog -v
+```
+![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/iverilog.jpg?raw=true)
 
-scripts/ → OpenLane automation scripts and supporting utilities
+## 4.GTKWave
+```bash
+$ sudo apt install gtkwave -y
+$ gtkwave --version
+```
+![GTKWave Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/gtkwave.jpg?raw=true)
 
-results/ → Generated layouts, timing & power reports, and logs
+## 5. Magic
+```bash
+$ sudo apt install magic -y
+$ magic -noconsole -dnull
+```
+![Magic Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/magic%20vlsi.jpg?raw=true)
 
-images/ → Architecture diagrams, flowcharts, and visualizations
+## 6. Ngspice
+```bash
+$ sudo apt install ngspice -y
+$ ngspice -v
+```
+![Ngspice Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ngspice.jpg?raw=true)
 
-🛠️ Tools & Technologies
+## 7.Docker
 
-OpenLane – Automated RTL-to-GDSII flow
+Docker is required for running OpenLane. It allows the flow to run in an isolated container with all dependencies pre-installed.
+```bash
+docker --version
+docker ps
+```
+![Docker_Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/docker.jpg?raw=true)
 
-Yosys – Logic synthesis framework
 
-OpenROAD – Floorplanning, placement, clock tree synthesis, and routing
 
-Magic VLSI – Physical verification (DRC/LVS) and layout inspection
 
-ngspice – Circuit simulation and analysis
 
-SKY130 PDK – Open-source technology node for fabrication
-
-🎯 Key Takeaways
-
-Hands-on understanding of the complete ASIC design flow
-
-Practical experience in implementing tapeout-ready SoCs
-
-Deeper knowledge of RISC-V architecture and open-source EDA tools
-
-Familiarity with industry-standard methodologies for silicon fabrication
