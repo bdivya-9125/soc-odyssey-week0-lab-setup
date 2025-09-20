@@ -25,16 +25,12 @@ Description:    Ubuntu 22.04 LTS
 Release:        22.04
 Codename:       jammy
 
-Yosys
+## Yosys   <-- this is a heading (outside)
+```bash
 $ sudo apt update
-$ sudo apt install build-essential clang bison flex git -y
-$ git clone https://github.com/YosysHQ/yosys.git
-$ cd yosys
-$ make config-gcc
-$ git submodule update --init --recursive
-$ make
-$ sudo make install
-$ yosys -V
+$ sudo apt install ...
+```   <-- only commands inside
+
 
 # Icarus Verilog
 $ sudo apt install iverilog -y
