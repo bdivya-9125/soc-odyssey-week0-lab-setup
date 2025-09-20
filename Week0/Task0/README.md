@@ -67,7 +67,7 @@ $ magic -noconsole -dnull
 $ sudo apt install ngspice -y
 $ ngspice -v
 ```
-![iverilog Installed]()
+![iverilog Installed](https://github.com/bdivya-9125/soc-odyssey-week0-lab-setup/blob/main/Week0/Task0/Images/ngspice.jpg?raw=true)
 
 
 
